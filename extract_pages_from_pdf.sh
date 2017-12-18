@@ -21,7 +21,7 @@ FILE=$OUTPUT
 
 if [ -e $FILE ]
 then
-        zenity --question --title "File exists" --text "Overwrite?"
+        zenity --question --title "File exists" --text "Overwrite $FILE?"
         accepted=$?
         if ((accepted != 0)); then
                 exit -1
