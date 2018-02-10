@@ -1,7 +1,5 @@
 #!/bin/bash
 
-FILE=$1
-
 OUTPUT=$(zenity --forms --title="Extract PDF pages" --text="Select page range" --separator="," --add-entry="From:" --add-entry="To:")
 accepted=$?
 if ((accepted != 0)); then
