@@ -5,7 +5,7 @@ opt2="ebook"
 opt3="printer"
 opt4="prepress"
 opt5="default"
-PRESET=$(zenity --height=275 --list --radiolist --text 'Select the preset to be used:' --column 'Selection' --column 'Preset' FALSE "$opt1" FALSE "$opt2" FALSE "$opt3" TRUE "$opt4" FALSE "$opt5")
+PRESET=$(zenity --height=275 --list --radiolist --text 'Select the preset to be used:' --column 'Selection' --column 'Preset' FALSE "$opt1" FALSE "$opt2" TRUE "$opt3" FALSE "$opt4" FALSE "$opt5")
 if [ -z $PRESET ]
 then
     exit -1
